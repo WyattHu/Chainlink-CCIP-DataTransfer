@@ -1,0 +1,275 @@
+{
+  "address": "0xd2294FaF2b25c4ee9FF762C67820bcDAe29BBeBa",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "router",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "router",
+          "type": "address"
+        }
+      ],
+      "name": "InvalidRouter",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "messageId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint64",
+          "name": "sourceChainSelector",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "name": "MessageReceived",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "messageId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint64",
+              "name": "sourceChainSelector",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes",
+              "name": "sender",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct Client.EVMTokenAmount[]",
+              "name": "destTokenAmounts",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct Client.Any2EVMMessage",
+          "name": "message",
+          "type": "tuple"
+        }
+      ],
+      "name": "ccipReceive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLastReceivedMessageDetails",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "messageId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRouter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x8008b242a6c555651787e76a2f062b85fca3c6ee5f3154bae3c8f2873ba9125b",
+  "receipt": {
+    "to": null,
+    "from": "0x294e0bCC654D249eA6EF17f9f83d20B58999C921",
+    "contractAddress": "0xd2294FaF2b25c4ee9FF762C67820bcDAe29BBeBa",
+    "transactionIndex": 4,
+    "gasUsed": "899808",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x30d38d7aed31c4ce6eb834948fe04ad66f43d1057b246ee0258bc9730ebf4c53",
+    "transactionHash": "0x8008b242a6c555651787e76a2f062b85fca3c6ee5f3154bae3c8f2873ba9125b",
+    "logs": [],
+    "blockNumber": 14893335,
+    "cumulativeGasUsed": "2062499",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x2B70a05320cB069e0fB55084D402343F832556E7"
+  ],
+  "numDeployments": 2,
+  "solcInputHash": "9c42f265ea84266e95ec882630f4bbd7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"router\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"router\",\"type\":\"address\"}],\"name\":\"InvalidRouter\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"messageId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"uint64\",\"name\":\"sourceChainSelector\",\"type\":\"uint64\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"name\":\"MessageReceived\",\"type\":\"event\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"messageId\",\"type\":\"bytes32\"},{\"internalType\":\"uint64\",\"name\":\"sourceChainSelector\",\"type\":\"uint64\"},{\"internalType\":\"bytes\",\"name\":\"sender\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"struct Client.EVMTokenAmount[]\",\"name\":\"destTokenAmounts\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Client.Any2EVMMessage\",\"name\":\"message\",\"type\":\"tuple\"}],\"name\":\"ccipReceive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLastReceivedMessageDetails\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"messageId\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"text\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRouter\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"ccipReceive((bytes32,uint64,bytes,bytes,(address,uint256)[]))\":{\"details\":\"Note ensure you check the msg.sender is the OffRampRouter\",\"params\":{\"message\":\"CCIP Message\"}},\"constructor\":{\"params\":{\"router\":\"The address of the router contract.\"}},\"getLastReceivedMessageDetails()\":{\"returns\":{\"messageId\":\"The ID of the last received message.\",\"text\":\"The last received text.\"}},\"getRouter()\":{\"returns\":{\"_0\":\"CCIP router address\"}},\"supportsInterface(bytes4)\":{\"details\":\"Should indicate whether the contract implements IAny2EVMMessageReceiver e.g. return interfaceId == type(IAny2EVMMessageReceiver).interfaceId || interfaceId == type(IERC165).interfaceId This allows CCIP to check if ccipReceive is available before calling it. If this returns false or reverts, only tokens are transferred to the receiver. If this returns true, tokens are transferred and ccipReceive is called atomically. Additionally, if the receiver address does not have code associated with it at the time of execution (EXTCODESIZE returns 0), only tokens will be transferred.\",\"params\":{\"interfaceId\":\"The interfaceId to check\"},\"returns\":{\"_0\":\"true if the interfaceId is supported\"}}},\"title\":\"- A simple contract for receiving string data across chains.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"ccipReceive((bytes32,uint64,bytes,bytes,(address,uint256)[]))\":{\"notice\":\"Called by the Router to deliver a message. If this reverts, any token transfers also revert. The message will move to a FAILED state and become available for manual execution.\"},\"constructor\":{\"notice\":\"Constructor initializes the contract with the router address.\"},\"getLastReceivedMessageDetails()\":{\"notice\":\"Fetches the details of the last received message.\"},\"getRouter()\":{\"notice\":\"Return the current router\"},\"supportsInterface(bytes4)\":{\"notice\":\"IERC165 supports an interfaceId\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/DataReceiver.sol\":\"DataReceiver\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@chainlink/contracts-ccip/src/v0.8/ccip/applications/CCIPReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport {IAny2EVMMessageReceiver} from \\\"../interfaces/IAny2EVMMessageReceiver.sol\\\";\\n\\nimport {Client} from \\\"../libraries/Client.sol\\\";\\n\\nimport {IERC165} from \\\"../../vendor/openzeppelin-solidity/v4.8.3/contracts/utils/introspection/IERC165.sol\\\";\\n\\n/// @title CCIPReceiver - Base contract for CCIP applications that can receive messages.\\nabstract contract CCIPReceiver is IAny2EVMMessageReceiver, IERC165 {\\n  address internal immutable i_ccipRouter;\\n\\n  constructor(address router) {\\n    if (router == address(0)) revert InvalidRouter(address(0));\\n    i_ccipRouter = router;\\n  }\\n\\n  /// @notice IERC165 supports an interfaceId\\n  /// @param interfaceId The interfaceId to check\\n  /// @return true if the interfaceId is supported\\n  /// @dev Should indicate whether the contract implements IAny2EVMMessageReceiver\\n  /// e.g. return interfaceId == type(IAny2EVMMessageReceiver).interfaceId || interfaceId == type(IERC165).interfaceId\\n  /// This allows CCIP to check if ccipReceive is available before calling it.\\n  /// If this returns false or reverts, only tokens are transferred to the receiver.\\n  /// If this returns true, tokens are transferred and ccipReceive is called atomically.\\n  /// Additionally, if the receiver address does not have code associated with\\n  /// it at the time of execution (EXTCODESIZE returns 0), only tokens will be transferred.\\n  function supportsInterface(bytes4 interfaceId) public pure virtual override returns (bool) {\\n    return interfaceId == type(IAny2EVMMessageReceiver).interfaceId || interfaceId == type(IERC165).interfaceId;\\n  }\\n\\n  /// @inheritdoc IAny2EVMMessageReceiver\\n  function ccipReceive(Client.Any2EVMMessage calldata message) external virtual override onlyRouter {\\n    _ccipReceive(message);\\n  }\\n\\n  /// @notice Override this function in your implementation.\\n  /// @param message Any2EVMMessage\\n  function _ccipReceive(Client.Any2EVMMessage memory message) internal virtual;\\n\\n  /////////////////////////////////////////////////////////////////////\\n  // Plumbing\\n  /////////////////////////////////////////////////////////////////////\\n\\n  /// @notice Return the current router\\n  /// @return CCIP router address\\n  function getRouter() public view returns (address) {\\n    return address(i_ccipRouter);\\n  }\\n\\n  error InvalidRouter(address router);\\n\\n  /// @dev only calls from the set router are accepted.\\n  modifier onlyRouter() {\\n    if (msg.sender != address(i_ccipRouter)) revert InvalidRouter(msg.sender);\\n    _;\\n  }\\n}\\n\",\"keccak256\":\"0x23827b8b1cd9f1d7886720ab0347d34891c4a584dc9ee048b85a41dc2241917f\",\"license\":\"MIT\"},\"@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IAny2EVMMessageReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport {Client} from \\\"../libraries/Client.sol\\\";\\n\\n/// @notice Application contracts that intend to receive messages from\\n/// the router should implement this interface.\\ninterface IAny2EVMMessageReceiver {\\n  /// @notice Called by the Router to deliver a message.\\n  /// If this reverts, any token transfers also revert. The message\\n  /// will move to a FAILED state and become available for manual execution.\\n  /// @param message CCIP Message\\n  /// @dev Note ensure you check the msg.sender is the OffRampRouter\\n  function ccipReceive(Client.Any2EVMMessage calldata message) external;\\n}\\n\",\"keccak256\":\"0xd2a05a4f58a453cbf8cfa6aa78f58cb8e42091b3a025f711a0aa51f584e16b48\",\"license\":\"MIT\"},\"@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\n// End consumer library.\\nlibrary Client {\\n  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.\\n  struct EVMTokenAmount {\\n    address token; // token address on the local chain.\\n    uint256 amount; // Amount of tokens.\\n  }\\n\\n  struct Any2EVMMessage {\\n    bytes32 messageId; // MessageId corresponding to ccipSend on source.\\n    uint64 sourceChainSelector; // Source chain selector.\\n    bytes sender; // abi.decode(sender) if coming from an EVM chain.\\n    bytes data; // payload sent in original message.\\n    EVMTokenAmount[] destTokenAmounts; // Tokens and their amounts in their destination chain representation.\\n  }\\n\\n  // If extraArgs is empty bytes, the default is 200k gas limit.\\n  struct EVM2AnyMessage {\\n    bytes receiver; // abi.encode(receiver address) for dest EVM chains\\n    bytes data; // Data payload\\n    EVMTokenAmount[] tokenAmounts; // Token transfers\\n    address feeToken; // Address of feeToken. address(0) means you will send msg.value.\\n    bytes extraArgs; // Populate this with _argsToBytes(EVMExtraArgsV1)\\n  }\\n\\n  // bytes4(keccak256(\\\"CCIP EVMExtraArgsV1\\\"));\\n  bytes4 public constant EVM_EXTRA_ARGS_V1_TAG = 0x97a657c9;\\n  struct EVMExtraArgsV1 {\\n    uint256 gasLimit;\\n  }\\n\\n  function _argsToBytes(EVMExtraArgsV1 memory extraArgs) internal pure returns (bytes memory bts) {\\n    return abi.encodeWithSelector(EVM_EXTRA_ARGS_V1_TAG, extraArgs);\\n  }\\n}\\n\",\"keccak256\":\"0x8af3ac1085c87342373772fb1a0107c7b90258e6bfed318ab2a601a14477e679\",\"license\":\"MIT\"},\"@chainlink/contracts-ccip/src/v0.8/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/introspection/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others ({ERC165Checker}).\\n *\\n * For an implementation, see {ERC165}.\\n */\\ninterface IERC165 {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\",\"keccak256\":\"0xa36a31b4bb17fad88d023474893b3b895fa421650543b1ce5aefc78efbd43244\",\"license\":\"MIT\"},\"contracts/DataReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.20;\\r\\n\\r\\nimport {Client} from \\\"@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol\\\";\\r\\nimport {CCIPReceiver} from \\\"@chainlink/contracts-ccip/src/v0.8/ccip/applications/CCIPReceiver.sol\\\";\\r\\n\\r\\n/**\\r\\n * THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY.\\r\\n * THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE.\\r\\n * DO NOT USE THIS CODE IN PRODUCTION.\\r\\n */\\r\\n\\r\\n/// @title - A simple contract for receiving string data across chains.\\r\\ncontract DataReceiver is CCIPReceiver {\\r\\n    // Event emitted when a message is received from another chain.\\r\\n    event MessageReceived(\\r\\n        bytes32 indexed messageId, // The unique ID of the message.\\r\\n        uint64 indexed sourceChainSelector, // The chain selector of the source chain.\\r\\n        address sender, // The address of the sender from the source chain.\\r\\n        string text // The text that was received.\\r\\n    );\\r\\n\\r\\n    bytes32 private s_lastReceivedMessageId; // Store the last received messageId.\\r\\n    string private s_lastReceivedText; // Store the last received text.\\r\\n\\r\\n    /// @notice Constructor initializes the contract with the router address.\\r\\n    /// @param router The address of the router contract.\\r\\n    constructor(address router) CCIPReceiver(router) {}\\r\\n\\r\\n    /// handle a received message\\r\\n    function _ccipReceive(\\r\\n        Client.Any2EVMMessage memory any2EvmMessage\\r\\n    ) internal override {\\r\\n        s_lastReceivedMessageId = any2EvmMessage.messageId; // fetch the messageId\\r\\n        s_lastReceivedText = abi.decode(any2EvmMessage.data, (string)); // abi-decoding of the sent text\\r\\n\\r\\n        emit MessageReceived(\\r\\n            any2EvmMessage.messageId,\\r\\n            any2EvmMessage.sourceChainSelector, // fetch the source chain identifier (aka selector)\\r\\n            abi.decode(any2EvmMessage.sender, (address)), // abi-decoding of the sender address,\\r\\n            abi.decode(any2EvmMessage.data, (string))\\r\\n        );\\r\\n    }\\r\\n\\r\\n    /// @notice Fetches the details of the last received message.\\r\\n    /// @return messageId The ID of the last received message.\\r\\n    /// @return text The last received text.\\r\\n    function getLastReceivedMessageDetails()\\r\\n        external\\r\\n        view\\r\\n        returns (bytes32 messageId, string memory text)\\r\\n    {\\r\\n        return (s_lastReceivedMessageId, s_lastReceivedText);\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x3ea02c45b6a48f6e4c71f2ab5aed86fcf141248e8a56d787d0d248da0e3eec68\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a06040523480156200001157600080fd5b506040516200111338038062001113833981810160405281019062000037919062000153565b80600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1603620000ad5760006040517fd7f73334000000000000000000000000000000000000000000000000000000008152600401620000a4919062000196565b60405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff16815250505050620001b3565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006200011b82620000ee565b9050919050565b6200012d816200010e565b81146200013957600080fd5b50565b6000815190506200014d8162000122565b92915050565b6000602082840312156200016c576200016b620000e9565b5b60006200017c848285016200013c565b91505092915050565b62000190816200010e565b82525050565b6000602082019050620001ad600083018462000185565b92915050565b608051610f3d620001d66000396000818161024b01526102f20152610f3d6000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806301ffc9a714610051578063263596a51461008157806385572ffb146100a0578063b0f479a1146100bc575b600080fd5b61006b60048036038101906100669190610432565b6100da565b604051610078919061047a565b60405180910390f35b6100896101ac565b60405161009792919061053e565b60405180910390f35b6100ba60048036038101906100b59190610592565b610249565b005b6100c46102ee565b6040516100d1919061061c565b60405180910390f35b60007f85572ffb000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806101a557507f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9050919050565b6000606060005460018080546101c190610666565b80601f01602080910402602001604051908101604052809291908181526020018280546101ed90610666565b801561023a5780601f1061020f5761010080835404028352916020019161023a565b820191906000526020600020905b81548152906001019060200180831161021d57829003601f168201915b50505050509050915091509091565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102d957336040517fd7f733340000000000000000000000000000000000000000000000000000000081526004016102d0919061061c565b60405180910390fd5b6102eb816102e690610a9c565b610316565b50565b60007f0000000000000000000000000000000000000000000000000000000000000000905090565b806000015160008190555080606001518060200190518101906103399190610b50565b600190816103479190610d45565b50806020015167ffffffffffffffff1681600001517fb1e312a29937cc11967b0e4a346fef1ae132424ebaba9dc6d90249dba053e87c83604001518060200190518101906103959190610e55565b84606001518060200190518101906103ad9190610b50565b6040516103bb929190610ed7565b60405180910390a350565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b61040f816103da565b811461041a57600080fd5b50565b60008135905061042c81610406565b92915050565b600060208284031215610448576104476103d0565b5b60006104568482850161041d565b91505092915050565b60008115159050919050565b6104748161045f565b82525050565b600060208201905061048f600083018461046b565b92915050565b6000819050919050565b6104a881610495565b82525050565b600081519050919050565b600082825260208201905092915050565b60005b838110156104e85780820151818401526020810190506104cd565b60008484015250505050565b6000601f19601f8301169050919050565b6000610510826104ae565b61051a81856104b9565b935061052a8185602086016104ca565b610533816104f4565b840191505092915050565b6000604082019050610553600083018561049f565b81810360208301526105658184610505565b90509392505050565b600080fd5b600060a082840312156105895761058861056e565b5b81905092915050565b6000602082840312156105a8576105a76103d0565b5b600082013567ffffffffffffffff8111156105c6576105c56103d5565b5b6105d284828501610573565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610606826105db565b9050919050565b610616816105fb565b82525050565b6000602082019050610631600083018461060d565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b6000600282049050600182168061067e57607f821691505b60208210810361069157610690610637565b5b50919050565b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6106d4826104f4565b810181811067ffffffffffffffff821117156106f3576106f261069c565b5b80604052505050565b60006107066103c6565b905061071282826106cb565b919050565b600080fd5b61072581610495565b811461073057600080fd5b50565b6000813590506107428161071c565b92915050565b600067ffffffffffffffff82169050919050565b61076581610748565b811461077057600080fd5b50565b6000813590506107828161075c565b92915050565b600080fd5b600080fd5b600067ffffffffffffffff8211156107ad576107ac61069c565b5b6107b6826104f4565b9050602081019050919050565b82818337600083830152505050565b60006107e56107e084610792565b6106fc565b9050828152602081018484840111156108015761080061078d565b5b61080c8482856107c3565b509392505050565b600082601f83011261082957610828610788565b5b81356108398482602086016107d2565b91505092915050565b600067ffffffffffffffff82111561085d5761085c61069c565b5b602082029050602081019050919050565b600080fd5b61087c816105fb565b811461088757600080fd5b50565b60008135905061089981610873565b92915050565b6000819050919050565b6108b28161089f565b81146108bd57600080fd5b50565b6000813590506108cf816108a9565b92915050565b6000604082840312156108eb576108ea610697565b5b6108f560406106fc565b905060006109058482850161088a565b6000830152506020610919848285016108c0565b60208301525092915050565b600061093861093384610842565b6106fc565b9050808382526020820190506040840283018581111561095b5761095a61086e565b5b835b81811015610984578061097088826108d5565b84526020840193505060408101905061095d565b5050509392505050565b600082601f8301126109a3576109a2610788565b5b81356109b3848260208601610925565b91505092915050565b600060a082840312156109d2576109d1610697565b5b6109dc60a06106fc565b905060006109ec84828501610733565b6000830152506020610a0084828501610773565b602083015250604082013567ffffffffffffffff811115610a2457610a23610717565b5b610a3084828501610814565b604083015250606082013567ffffffffffffffff811115610a5457610a53610717565b5b610a6084828501610814565b606083015250608082013567ffffffffffffffff811115610a8457610a83610717565b5b610a908482850161098e565b60808301525092915050565b6000610aa836836109bc565b9050919050565b600067ffffffffffffffff821115610aca57610ac961069c565b5b610ad3826104f4565b9050602081019050919050565b6000610af3610aee84610aaf565b6106fc565b905082815260208101848484011115610b0f57610b0e61078d565b5b610b1a8482856104ca565b509392505050565b600082601f830112610b3757610b36610788565b5b8151610b47848260208601610ae0565b91505092915050565b600060208284031215610b6657610b656103d0565b5b600082015167ffffffffffffffff811115610b8457610b836103d5565b5b610b9084828501610b22565b91505092915050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610bfb7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610bbe565b610c058683610bbe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610c42610c3d610c388461089f565b610c1d565b61089f565b9050919050565b6000819050919050565b610c5c83610c27565b610c70610c6882610c49565b848454610bcb565b825550505050565b600090565b610c85610c78565b610c90818484610c53565b505050565b5b81811015610cb457610ca9600082610c7d565b600181019050610c96565b5050565b601f821115610cf957610cca81610b99565b610cd384610bae565b81016020851015610ce2578190505b610cf6610cee85610bae565b830182610c95565b50505b505050565b600082821c905092915050565b6000610d1c60001984600802610cfe565b1980831691505092915050565b6000610d358383610d0b565b9150826002028217905092915050565b610d4e826104ae565b67ffffffffffffffff811115610d6757610d6661069c565b5b610d718254610666565b610d7c828285610cb8565b600060209050601f831160018114610daf5760008415610d9d578287015190505b610da78582610d29565b865550610e0f565b601f198416610dbd86610b99565b60005b82811015610de557848901518255600182019150602085019450602081019050610dc0565b86831015610e025784890151610dfe601f891682610d0b565b8355505b6001600288020188555050505b505050505050565b6000610e22826105db565b9050919050565b610e3281610e17565b8114610e3d57600080fd5b50565b600081519050610e4f81610e29565b92915050565b600060208284031215610e6b57610e6a6103d0565b5b6000610e7984828501610e40565b91505092915050565b6000610e9d610e98610e93846105db565b610c1d565b6105db565b9050919050565b6000610eaf82610e82565b9050919050565b6000610ec182610ea4565b9050919050565b610ed181610eb6565b82525050565b6000604082019050610eec6000830185610ec8565b8181036020830152610efe8184610505565b9050939250505056fea2646970667358221220f61938a42b69608b7f90f728ec704cbaaa80b1daa51c16ffe088c309b1e0f8b364736f6c63430008140033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806301ffc9a714610051578063263596a51461008157806385572ffb146100a0578063b0f479a1146100bc575b600080fd5b61006b60048036038101906100669190610432565b6100da565b604051610078919061047a565b60405180910390f35b6100896101ac565b60405161009792919061053e565b60405180910390f35b6100ba60048036038101906100b59190610592565b610249565b005b6100c46102ee565b6040516100d1919061061c565b60405180910390f35b60007f85572ffb000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806101a557507f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9050919050565b6000606060005460018080546101c190610666565b80601f01602080910402602001604051908101604052809291908181526020018280546101ed90610666565b801561023a5780601f1061020f5761010080835404028352916020019161023a565b820191906000526020600020905b81548152906001019060200180831161021d57829003601f168201915b50505050509050915091509091565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102d957336040517fd7f733340000000000000000000000000000000000000000000000000000000081526004016102d0919061061c565b60405180910390fd5b6102eb816102e690610a9c565b610316565b50565b60007f0000000000000000000000000000000000000000000000000000000000000000905090565b806000015160008190555080606001518060200190518101906103399190610b50565b600190816103479190610d45565b50806020015167ffffffffffffffff1681600001517fb1e312a29937cc11967b0e4a346fef1ae132424ebaba9dc6d90249dba053e87c83604001518060200190518101906103959190610e55565b84606001518060200190518101906103ad9190610b50565b6040516103bb929190610ed7565b60405180910390a350565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b61040f816103da565b811461041a57600080fd5b50565b60008135905061042c81610406565b92915050565b600060208284031215610448576104476103d0565b5b60006104568482850161041d565b91505092915050565b60008115159050919050565b6104748161045f565b82525050565b600060208201905061048f600083018461046b565b92915050565b6000819050919050565b6104a881610495565b82525050565b600081519050919050565b600082825260208201905092915050565b60005b838110156104e85780820151818401526020810190506104cd565b60008484015250505050565b6000601f19601f8301169050919050565b6000610510826104ae565b61051a81856104b9565b935061052a8185602086016104ca565b610533816104f4565b840191505092915050565b6000604082019050610553600083018561049f565b81810360208301526105658184610505565b90509392505050565b600080fd5b600060a082840312156105895761058861056e565b5b81905092915050565b6000602082840312156105a8576105a76103d0565b5b600082013567ffffffffffffffff8111156105c6576105c56103d5565b5b6105d284828501610573565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610606826105db565b9050919050565b610616816105fb565b82525050565b6000602082019050610631600083018461060d565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b6000600282049050600182168061067e57607f821691505b60208210810361069157610690610637565b5b50919050565b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6106d4826104f4565b810181811067ffffffffffffffff821117156106f3576106f261069c565b5b80604052505050565b60006107066103c6565b905061071282826106cb565b919050565b600080fd5b61072581610495565b811461073057600080fd5b50565b6000813590506107428161071c565b92915050565b600067ffffffffffffffff82169050919050565b61076581610748565b811461077057600080fd5b50565b6000813590506107828161075c565b92915050565b600080fd5b600080fd5b600067ffffffffffffffff8211156107ad576107ac61069c565b5b6107b6826104f4565b9050602081019050919050565b82818337600083830152505050565b60006107e56107e084610792565b6106fc565b9050828152602081018484840111156108015761080061078d565b5b61080c8482856107c3565b509392505050565b600082601f83011261082957610828610788565b5b81356108398482602086016107d2565b91505092915050565b600067ffffffffffffffff82111561085d5761085c61069c565b5b602082029050602081019050919050565b600080fd5b61087c816105fb565b811461088757600080fd5b50565b60008135905061089981610873565b92915050565b6000819050919050565b6108b28161089f565b81146108bd57600080fd5b50565b6000813590506108cf816108a9565b92915050565b6000604082840312156108eb576108ea610697565b5b6108f560406106fc565b905060006109058482850161088a565b6000830152506020610919848285016108c0565b60208301525092915050565b600061093861093384610842565b6106fc565b9050808382526020820190506040840283018581111561095b5761095a61086e565b5b835b81811015610984578061097088826108d5565b84526020840193505060408101905061095d565b5050509392505050565b600082601f8301126109a3576109a2610788565b5b81356109b3848260208601610925565b91505092915050565b600060a082840312156109d2576109d1610697565b5b6109dc60a06106fc565b905060006109ec84828501610733565b6000830152506020610a0084828501610773565b602083015250604082013567ffffffffffffffff811115610a2457610a23610717565b5b610a3084828501610814565b604083015250606082013567ffffffffffffffff811115610a5457610a53610717565b5b610a6084828501610814565b606083015250608082013567ffffffffffffffff811115610a8457610a83610717565b5b610a908482850161098e565b60808301525092915050565b6000610aa836836109bc565b9050919050565b600067ffffffffffffffff821115610aca57610ac961069c565b5b610ad3826104f4565b9050602081019050919050565b6000610af3610aee84610aaf565b6106fc565b905082815260208101848484011115610b0f57610b0e61078d565b5b610b1a8482856104ca565b509392505050565b600082601f830112610b3757610b36610788565b5b8151610b47848260208601610ae0565b91505092915050565b600060208284031215610b6657610b656103d0565b5b600082015167ffffffffffffffff811115610b8457610b836103d5565b5b610b9084828501610b22565b91505092915050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610bfb7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610bbe565b610c058683610bbe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610c42610c3d610c388461089f565b610c1d565b61089f565b9050919050565b6000819050919050565b610c5c83610c27565b610c70610c6882610c49565b848454610bcb565b825550505050565b600090565b610c85610c78565b610c90818484610c53565b505050565b5b81811015610cb457610ca9600082610c7d565b600181019050610c96565b5050565b601f821115610cf957610cca81610b99565b610cd384610bae565b81016020851015610ce2578190505b610cf6610cee85610bae565b830182610c95565b50505b505050565b600082821c905092915050565b6000610d1c60001984600802610cfe565b1980831691505092915050565b6000610d358383610d0b565b9150826002028217905092915050565b610d4e826104ae565b67ffffffffffffffff811115610d6757610d6661069c565b5b610d718254610666565b610d7c828285610cb8565b600060209050601f831160018114610daf5760008415610d9d578287015190505b610da78582610d29565b865550610e0f565b601f198416610dbd86610b99565b60005b82811015610de557848901518255600182019150602085019450602081019050610dc0565b86831015610e025784890151610dfe601f891682610d0b565b8355505b6001600288020188555050505b505050505050565b6000610e22826105db565b9050919050565b610e3281610e17565b8114610e3d57600080fd5b50565b600081519050610e4f81610e29565b92915050565b600060208284031215610e6b57610e6a6103d0565b5b6000610e7984828501610e40565b91505092915050565b6000610e9d610e98610e93846105db565b610c1d565b6105db565b9050919050565b6000610eaf82610e82565b9050919050565b6000610ec182610ea4565b9050919050565b610ed181610eb6565b82525050565b6000604082019050610eec6000830185610ec8565b8181036020830152610efe8184610505565b9050939250505056fea2646970667358221220f61938a42b69608b7f90f728ec704cbaaa80b1daa51c16ffe088c309b1e0f8b364736f6c63430008140033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "ccipReceive((bytes32,uint64,bytes,bytes,(address,uint256)[]))": {
+        "details": "Note ensure you check the msg.sender is the OffRampRouter",
+        "params": {
+          "message": "CCIP Message"
+        }
+      },
+      "constructor": {
+        "params": {
+          "router": "The address of the router contract."
+        }
+      },
+      "getLastReceivedMessageDetails()": {
+        "returns": {
+          "messageId": "The ID of the last received message.",
+          "text": "The last received text."
+        }
+      },
+      "getRouter()": {
+        "returns": {
+          "_0": "CCIP router address"
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "Should indicate whether the contract implements IAny2EVMMessageReceiver e.g. return interfaceId == type(IAny2EVMMessageReceiver).interfaceId || interfaceId == type(IERC165).interfaceId This allows CCIP to check if ccipReceive is available before calling it. If this returns false or reverts, only tokens are transferred to the receiver. If this returns true, tokens are transferred and ccipReceive is called atomically. Additionally, if the receiver address does not have code associated with it at the time of execution (EXTCODESIZE returns 0), only tokens will be transferred.",
+        "params": {
+          "interfaceId": "The interfaceId to check"
+        },
+        "returns": {
+          "_0": "true if the interfaceId is supported"
+        }
+      }
+    },
+    "title": "- A simple contract for receiving string data across chains.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "ccipReceive((bytes32,uint64,bytes,bytes,(address,uint256)[]))": {
+        "notice": "Called by the Router to deliver a message. If this reverts, any token transfers also revert. The message will move to a FAILED state and become available for manual execution."
+      },
+      "constructor": {
+        "notice": "Constructor initializes the contract with the router address."
+      },
+      "getLastReceivedMessageDetails()": {
+        "notice": "Fetches the details of the last received message."
+      },
+      "getRouter()": {
+        "notice": "Return the current router"
+      },
+      "supportsInterface(bytes4)": {
+        "notice": "IERC165 supports an interfaceId"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 584,
+        "contract": "contracts/DataReceiver.sol:DataReceiver",
+        "label": "s_lastReceivedMessageId",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 586,
+        "contract": "contracts/DataReceiver.sol:DataReceiver",
+        "label": "s_lastReceivedText",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_string_storage"
+      }
+    ],
+    "types": {
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
